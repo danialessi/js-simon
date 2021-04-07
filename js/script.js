@@ -14,13 +14,12 @@ while (numeri.length < 5) {
         numeri.push(numeroCasuale);
     }
 }
-console.log(numeri);
 
 // 2 - alert con i 5 numeri 
 alert(numeri);
 
 // 3 - deve partire il timer di 30 secondi
-var seconds = 30;
+var seconds = 10;
 var secondsElement = document.getElementById('seconds');
 
 // salvo in una variabile il countdown
@@ -36,3 +35,29 @@ var countdown = setInterval(function(){
     }
     
 }, 1000);
+
+// 4 - dopo 30 secondi chiedo i numeri all'utente
+setTimeout(function(){
+    
+    var numeriIndovinati = [];
+
+    for (var i = 0; i < 5; i++) {
+        var numUtente = parseInt(prompt("Dimmi il numero"));
+        
+        // metto a confronto il numero dell utente con quelli presenti nell array di numeri casuali 
+        if (numeri.includes(numUtente)) {
+            numeriIndovinati.push(numUtente);
+        }
+    }
+
+    console.log("numeriIndovinati", numeriIndovinati);
+    
+
+    
+    
+    
+
+
+}, 10000);
+
+
