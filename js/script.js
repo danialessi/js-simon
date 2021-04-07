@@ -50,14 +50,17 @@ setTimeout(function(){
         }
     }
 
-    console.log("numeriIndovinati", numeriIndovinati);
-    
+    // stampo i risultati 
 
-    
-    
-    
+    document.getElementById('numeri').innerHTML = numeri;
+    document.getElementById('numeri-indovinati').innerHTML = numeriIndovinati;
+    // console.log("numeriIndovinati", numeriIndovinati);
 
+    // popolo html con il risultato della partita 
+    if (numeriIndovinati.length == numeri.length) {
+        document.getElementById('risultato-partita').innerHTML = "Hai vinto!"
+    } else {
+        document.getElementById('risultato-partita').innerHTML = "Hai perso!"
+    }
 
 }, 10000);
-
-
