@@ -42,7 +42,7 @@ setTimeout(function(){
     var numeriIndovinati = [];
 
     for (var i = 0; i < 5; i++) {
-        var numUtente = parseInt(prompt("Dimmi il numero"));
+        var numUtente = parseInt(prompt("Scrivi uno alla volta i numeri che hai appena visto"));
         
         // metto a confronto il numero dell utente con quelli presenti nell array di numeri casuali 
         if (numeri.includes(numUtente)) {
