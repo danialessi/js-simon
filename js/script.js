@@ -19,8 +19,8 @@ console.log(numeri);
 // 2 - alert con i 5 numeri 
 alert(numeri);
 
-// 3 - faccio partire il timer di 30 secondi dopo l'alert.
-var seconds = 5;
+// 3 - deve partire il timer di 30 secondi
+var seconds = 30;
 var secondsElement = document.getElementById('seconds');
 
 // salvo in una variabile il countdown
@@ -36,8 +36,3 @@ var countdown = setInterval(function(){
     }
     
 }, 1000);
-
-
-
-
-
